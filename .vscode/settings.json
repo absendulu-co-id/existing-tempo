@@ -1,0 +1,24 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.tabSize": 2,
+  "eslint.format.enable": true,
+  "eslint.onIgnoredFiles": "warn",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "i18n-ally.localesPaths": [
+    "public/locales"
+  ],
+}

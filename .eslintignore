@@ -1,0 +1,5 @@
+build/**/*
+dist/**/*
+app/models/generated/**
+colors/**/*
+src\styles\tailwind.css

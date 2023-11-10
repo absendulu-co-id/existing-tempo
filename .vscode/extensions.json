@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "dsznajder.es7-react-js-snippets",
+    "dbaeumer.vscode-eslint",
+    "lokalise.i18n-ally",
+    "richie5um2.vscode-sort-json",
+    "shardulm94.trailing-spaces",
+    "editorconfig.editorconfig",
+    "mikestead.dotenv",
+    "aaron-bond.better-comments"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "directory": [
+    "./src/interface",
+    "./src/menu",
+    "./src/app/services"
+  ]
+}

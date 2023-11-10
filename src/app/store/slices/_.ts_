@@ -1,0 +1,44 @@
+import { Store } from "../store";
+import { produce } from "immer";
+import cloneDeep from "lodash/cloneDeep";
+import { StateCreator, StoreApi } from "zustand";
+
+// CTRL+H _TEMPLATE_
+
+export interface _TEMPLATE_Slice {
+  loading: boolean;
+  // TODO STATE HERE
+
+  actions: {
+    resetState: () => void;
+  };
+}
+
+type ThisStore = Pick<Store, "_TEMPLATE_Slice"> & Partial<Store>;
+
+export const create_TEMPLATE_Slice: StateCreator<ThisStore> = (set, get): ThisStore => {
+  const setState = (fn: StoreApi<Store>["setState"]) => set(produce(get(), fn));
+
+  const getDefaultState: () => Omit<_TEMPLATE_Slice, "actions"> = () => {
+    return cloneDeep({
+      loading: false,
+      // TODO STATE HERE
+    });
+  };
+
+  return {
+    _TEMPLATE_Slice: {
+      ...getDefaultState(),
+      actions: {
+        resetState: () => {
+          setState((state: Store) => {
+            state._TEMPLATE_Slice = {
+              ...getDefaultState(),
+              actions: state._TEMPLATE_Slice.actions,
+            };
+          });
+        },
+      },
+    },
+  };
+};
